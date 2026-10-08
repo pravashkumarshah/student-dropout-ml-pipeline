@@ -53,3 +53,14 @@ tests/captures/**
 Thumbs.db
 .vscode/
 *.log
+
+# ---- Student Dropout ML additions (appended, originals preserved) ----
+.ipynb_checkpoints/
+*.pkl
+*.joblib
+!models/.gitkeep
+data/*.csv
+data/*.xlsx
+data/*.parquet
+.coverage
+htmlcov/

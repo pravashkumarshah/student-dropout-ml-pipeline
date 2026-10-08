@@ -1,0 +1,9 @@
+# Baseline Python dependencies for Student Dropout ML pipeline (Week 1 scaffold).
+# Unpinned for Week 1; to be pinned after Week 3 model implementation.
+numpy
+pandas
+scikit-learn
+matplotlib
+seaborn
+jupyter
+pytest
