@@ -39,7 +39,7 @@ pip install -r requirements.txt
 Requires Python 3.10+ (recommended). Do not commit `.venv/`.
 
 ## Six-Week Development Plan
-- **Week 1 - Project planning:** Define problem, success metrics, repo scaffold (this README).
+- **Week 1 - Project planning:** Define problem, success metrics, repo scaffold. See `reports/week1_project_plan.md` (Week 1 planning package).
 - **Week 2 - Data preprocessing and feature engineering:** Load data, clean missing values, encode categoricals, scale numerics, document pipeline in `notebooks/` + `src/`.
 - **Week 3 - Model implementation:** Baseline models (e.g. logistic regression, tree-based) with train/validation split in `src/`.
 - **Week 4 - Evaluation and validation:** Cross-validation, confusion matrix, precision/recall/F1, ROC-AUC. No test leakage.
