@@ -1,0 +1,55 @@
+# Local/offline-first voice assistant — build artefacts
+# (docs are committed; code/builds/weights/PII are not)
+
+# ---- ESP-IDF ----
+build/
+**/build/
+managed_components/
+dependencies.lock
+sdkconfig
+sdkconfig.old
+**/.cache/
+flash_args
+*.elf
+*.map
+
+# ---- Python (local AI server) ----
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+*.egg-info/
+
+# ---- Model weights / downloaded assets (never commit) ----
+models/**
+!models/README.md
+memory/**
+!memory/README.md
+local_ai/store/
+local_ai/logs/
+*.gguf
+*.onnx
+*.tflite
+*.safetensors
+
+# ---- Secrets, keys, provisioning material ----
+.env
+.env.*
+*.key
+*.pem
+*.crt
+secrets.*
+provisioning/
+
+# ---- Binary test captures: keep only whitelisted golden audio ----
+tests/captures/**
+!tests/captures/README.md
+
+# ---- OS / editor ----
+.DS_Store
+Thumbs.db
+.vscode/
+*.log
